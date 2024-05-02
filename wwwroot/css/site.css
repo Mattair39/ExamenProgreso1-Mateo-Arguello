@@ -20,3 +20,6 @@ html {
 body {
   margin-bottom: 60px;
 }
+h1{
+    color: aqua; font-size: 60px; font-family:'Baskerville Old Face';font-weight:bold;
+}
