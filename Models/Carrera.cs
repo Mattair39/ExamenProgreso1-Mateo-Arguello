@@ -15,7 +15,7 @@ namespace ExamenProgreso1.Models
         public string campus {  get; set; }
 
         [Required]
-        public int numero_semestres { get; set; }
+        public int numero_semestres { get; set; } 
 
 
     }
