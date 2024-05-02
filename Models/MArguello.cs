@@ -19,7 +19,7 @@ namespace ExamenProgreso1.Models
         public Boolean esEcuatoriano { get; set; }
 
         [ForeignKey("CarreraId")]
-
+         
         [AllowNull]
         public int CarreraId { get; set; }
 
