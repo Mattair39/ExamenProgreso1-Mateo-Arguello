@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 
 namespace ExamenProgreso1.Models
 {
@@ -7,9 +8,10 @@ namespace ExamenProgreso1.Models
         [Key]
         public int Id { get; set; }
 
-        [Required]
+        [DisplayName("Carrera")]
         public string nombre_Carrera { get; set; }
 
+        [StringLength(30)]
         public string campus {  get; set; }
 
         [Required]
