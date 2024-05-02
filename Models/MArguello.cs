@@ -13,7 +13,7 @@ namespace ExamenProgreso1.Models
 
         [AllowNull]
 
-        public decimal peso { get; set; }
+        public double peso { get; set; }
 
         [Required]
         public Boolean esEcuatoriano { get; set; }
@@ -23,7 +23,7 @@ namespace ExamenProgreso1.Models
         [AllowNull]
         public int CarreraId { get; set; }
 
-        public Carrera Carrera { get; set; }
+        public Carrera? Carrera { get; set; }
        
 
 
