@@ -20,7 +20,7 @@ namespace ExamenProgreso1.Models
 
         [ForeignKey("CarreraId")]
          
-        [AllowNull]
+        [AllowNull] 
         public int CarreraId { get; set; }
 
         public Carrera? Carrera { get; set; }

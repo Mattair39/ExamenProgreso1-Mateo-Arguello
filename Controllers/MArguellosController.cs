@@ -48,7 +48,7 @@ namespace ExamenProgreso1.Controllers
         // GET: MArguellos/Create
         public IActionResult Create()
         {
-            ViewData["CarreraId"] = new SelectList(_context.Set<Carrera>(), "Id", "nombre_Carrera");
+            ViewData["CarreraId"] = new SelectList(_context.Carrera, "Id", "nombre_Carrera");
             return View();
         }
 
@@ -65,7 +65,7 @@ namespace ExamenProgreso1.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["CarreraId"] = new SelectList(_context.Set<Carrera>(), "Id", "nombre_Carrera", mArguello.CarreraId);
+            ViewData["CarreraId"] = new SelectList(_context.Carrera, "Id", "nombre_Carrera", mArguello.CarreraId);
             return View(mArguello);
         }
 
@@ -82,7 +82,7 @@ namespace ExamenProgreso1.Controllers
             {
                 return NotFound();
             }
-            ViewData["CarreraId"] = new SelectList(_context.Set<Carrera>(), "Id", "nombre_Carrera", mArguello.CarreraId);
+            ViewData["CarreraId"] = new SelectList(_context.Carrera, "Id", "nombre_Carrera", mArguello.CarreraId);
             return View(mArguello);
         }
 
@@ -118,7 +118,7 @@ namespace ExamenProgreso1.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["CarreraId"] = new SelectList(_context.Set<Carrera>(), "Id", "nombre_Carrera", mArguello.CarreraId);
+            ViewData["CarreraId"] = new SelectList(_context.Carrera, "Id", "nombre_Carrera", mArguello.CarreraId);
             return View(mArguello);
         }
 
